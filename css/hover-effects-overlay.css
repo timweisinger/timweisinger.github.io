@@ -1,0 +1,53 @@
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+.grid:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.grid { display: inline-block; }
+/* start commented backslash hack \*/
+* html .grid { height: 1%; }
+.grid { display: block; }
+/* close commented backslash hack */
+
+/* Common style */
+.grid figure {
+    position: relative;
+    display: inline-block;
+    float: none;
+    overflow: hidden;
+    margin: 10px auto;
+    min-width: 240px;
+    max-width: 420px;
+    max-height: 280px;
+    width: 100%;
+    background: #3085a3;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+}   
+
+.grid figure:hover {
+    border: 1px solid #5E9A8C;
+    transition: border .2s ease-in;
+    animation-duration: .2s;
+}
+
+.grid img { 
+    padding: 0;
+    width: auto !important;
+    height: auto;
+    border-radius: 5px; 
+}

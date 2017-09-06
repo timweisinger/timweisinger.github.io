@@ -1,0 +1,193 @@
+.navbar img {
+    height: 25px;
+}
+
+.color-toggle {
+    background-color: #222222;
+}
+
+.navbar-default {
+    border: none;
+}
+
+.navbar-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    color: inherit;
+}
+
+/*      Navigation Menu start       */
+
+.navbar-one {
+    background-color: #FFFFFF;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: white;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    -moz-animation-delay: 0.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-duration: 1.5s;
+}
+
+#myNavbar1 {
+    margin: 0;
+    padding: 0;
+}
+
+#myNavbar1 li {
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+
+#myNavbar1 a {
+    background: inherit;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+#myNavbar1 a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	border-radius: 6px;
+	transition: width .3s ease, background-color .3s ease;
+}
+
+#myNavbar1 a:hover:after {
+    width: 100%;
+    background: white;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+#myNavbar1 a:focus:after {
+    width: 100%;
+    background: white;
+    outline: none;
+}
+
+#myNavbar1 a:focus {
+    outline: none;
+}
+
+@media (max-width: 760px) {
+    #myNavbar1 a {
+        width: 60vw;
+        display: block;
+    }
+    #myNavbar1 a:hover {
+        cursor: pointer;
+    }
+}
+
+
+/*      Navigation Menu One end     */
+
+
+/*      Navigation Menu Two start     */
+
+.navbar-two {
+    background-color: #5E9A8C;
+    border-radius: 0px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: white;
+    animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+}
+
+.navbar-two .navbar-toggle:hover,
+.navbar-two .navbar-toggle:focus, {
+    background-color: white !important;
+    color: #5E9A8C;
+}
+
+#myNavbar2 {
+    margin: 0;
+    padding: 0;
+}
+
+#myNavbar2 li {
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+
+#myNavbar2 a {
+    background: inherit;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+#myNavbar2 a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    border-radius: 6px;
+    transition: width .3s ease, background-color .3s ease;
+}
+
+#myNavbar2 a:hover:after {
+    width: 100%;
+    background: white;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+#myNavbar2 a:focus:after {
+    width: 100%;
+    background: white;
+    outline: none;
+}
+
+#myNavbar2 a:focus {
+    outline: none;
+}
+
+@media (max-width: 760px) {
+    #myNavbar2 a {
+        width: 60vw;
+        display: block;
+    }
+    #myNavbar2 a:hover {
+        cursor: pointer;
+    }
+}
+
+
+/*      Navigation Menu Two end     */

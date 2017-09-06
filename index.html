@@ -1,0 +1,66 @@
+---
+layout: default
+title: home
+projects:
+- digital
+- video
+- print
+- merch
+tools:
+- photoshop
+- premiere
+- after-effects
+- illustrator
+---
+
+    <div class="">
+        <!--                   Portfolio start                    -->
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="animated" data-animate="slideInUp">PORTFOLIO</h2>
+
+                <hr class="animated" data-animate="rubberBand">
+
+                <h3 class="animated" data-animate="slideInUp">I work with digital, video, and print.</h3>
+
+                <div class="row hover-effect">
+                    {% for project in page.projects %}
+                    <div class="col-lg-3 col-sm-6 grid">
+                        <figure class="effect-sarah animated" data-animate="zoomIn">
+                            <img src="/images/home/overlay-{{ project }}.jpg" alt="{{ project }}" />
+                            <figcaption>
+                                <div>
+                                    <h2>{{ project }}</h2>
+                                    <p>Take a look.</p>
+                                </div>
+                                <a href="/portfolio/{{ project }}.html"></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!--                   Portfolio end                  -->
+
+
+        <!--                   Toolkit start                   -->
+        <section id="toolkit">
+            <div class="container">
+                <h2 class="animated" data-animate="slideInUp">TOOLKIT</h2>
+
+                <hr class="animated" data-animate="rubberBand">
+
+                <h3 class="animated" data-animate="slideInUp">I'm proficient with Adobe's suite of tools.</h3>
+
+                <div class="row">
+                    {% for tool in page.tools %}
+                    <div class="col-md-3 col-sm-6 animated" data-animate="zoomIn">
+                        <img src="/images/home/{{ tool }}.png" alt="{{ tool }}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!--                   Toolkit end                 -->
+    </div>

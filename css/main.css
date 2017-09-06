@@ -1,0 +1,261 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900';
+
+/*      BASE CSS STARTS           */
+
+body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+hr {
+    width: 150px;
+    border-color: #5E9A8C;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 25px;
+    line-height: 40px;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.animated {
+    animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+@media (max-width: 650px) {
+    h3 {
+        font-size: 20px;
+        width: 90%;
+    }
+}
+
+/*      BASE CSS ENDS             */
+
+
+/*      COVER SECTION STARTS      */
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 1;
+    color: white;
+    position: relative;
+}
+
+#cover a {
+    color: white;
+}
+
+#cover #down-arrow {
+    font-size: 60px;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+}
+
+#cover #down-arrow:hover {
+    cursor: pointer;
+}
+
+#cover img {
+    width: 80%;
+}
+
+#cover p {
+    width: 100%;
+    padding: 0 32px;
+    text-align: center;
+    font-size: 32px;
+    font-size: 8vw;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 600px) {
+  #cover p {
+     font-size: 40px;
+  }
+}
+
+/*      COVER SECTION ENDS         */
+
+
+/*      PORTFOLIO SECTION STARTS   */
+
+#portfolio {
+    background-color: #F3F3F3;
+    color: #222222;
+}
+
+#portfolio .row {
+    padding-top: 40px;
+}
+
+/*      PORTFOLIO SECTION ENDS     */
+
+
+
+/*      PROJECTS SECTION STARTS    */
+
+#projects {
+    background-color: #F3F3F3;
+    color: #222222;
+}
+
+#projects .row {
+    padding-top: 40px;
+}
+
+#projects img {
+    width: 80%;
+    margin: 10px auto;
+}
+
+#projects .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 80%;
+    margin: auto;
+    height: auto;
+}
+#projects .embed-container iframe, #projects .embed-container object, #projects .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#projects .description {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/*      PROJECTS SECTION ENDS      */
+
+
+
+/*      TOOLKIT SECTION STARTS     */
+
+#toolkit {
+    color: #FFFFFF;
+    background-image: url("/images/home/toolkit-bg.jpg");
+    background-size: cover;
+}
+
+#toolkit img {
+    margin-top: 70px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+/*      TOOLKIT SECTION ENDS       */
+
+
+
+/*      FOOTER STARTS              */
+
+footer {
+    background-color: #222222;
+    padding: 20px;
+    color: white;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+footer li {
+    margin: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+footer li:hover {
+    background-color: #5E9A8C;
+}
+
+footer li i {
+    width: 40px;
+    height: 42px;
+    padding: 5px 0;
+    color: #5E9A8C;
+}
+
+footer li i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/*      FOOTER ENDS                 */
+

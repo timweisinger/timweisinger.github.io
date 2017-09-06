@@ -1,0 +1,79 @@
+    <!--                 NAVBAR ONE START                  -->
+    <nav class="nav navbar navbar-default navbar-one navbar-one-js animated" data-animate="fadeInDown">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle animated" data-animate="slideInRight" data-toggle="collapse" data-target="#myNavbar1">
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                {% if page.title != "home" %}
+                <a class="navbar-brand animated" data-animate="slideInLeft" href="/">
+                    <img src="/images/navbar-logo.png" alt="Tim Weisinger"/>
+                </a>
+                {% endif %}
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+                <ul class="navbar-right">
+                    {% if page.title == "home" %}
+                        <li><a class="animated" data-animate="slideInRight" href="#cover">Home</a></li>
+                        <li><a class="animated" data-animate="slideInRight" href="#portfolio">Portfolio</a></li>
+                        <li><a class="animated" data-animate="slideInRight" href="#toolkit">Toolkit</a></li>
+                        <li><a class="animated" data-animate="slideInRight" href="#contact">Contact</a></li>
+                    {% else %}
+                        <li><a class="animated" data-animate="slideInRight" href="/#portfolio">Back to Home</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--                  NAVBAR ONE END                   -->
+
+
+    <!--                   COVER START                     -->
+    <section id="cover" data-parallax="scroll" data-speed="0.5" data-image-src="/images/{{ page.title }}/{{ page.title }}-cover.jpg">
+        <div class="animated" data-animate="zoomIn">
+            {% if page.title == "home" %}
+            <img src="/images/home/home-cover-logo.png" alt="Tim Weisinger"/>
+            <p>A CREATIVE CAT</p>
+            <p>BASED IN SAN FRANCISCO</p>
+            {% elsif page.title == "digital" %}
+            <p>Here are some examples of my digital work.</p>
+            {% elsif page.title == "video" %}
+            <p>Here are some examples of my video work.</p>
+            {% elsif page.title == "print" %}
+            <p>Here are some examples of my print work.</p>
+            {% elsif page.title == "merch" %}
+            <p>Here's a soccer kit project.</p>
+            {% endif %}
+        </div>
+        <a href="#portfolio" id="down-arrow"><i class="fa fa-angle-down animated" data-animate="flash infinite"></i></a>
+    </section>
+    <!--                    COVER END                      -->
+
+
+    <!--                 NAVBAR TWO START                  -->
+    <nav class="nav navbar navbar-default navbar-two navbar-two-js animated" data-animated="fadeInDown">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle animated" data-animated="slideInRight" data-toggle="collapse" data-target="#myNavbar2">
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <a class="navbar-brand animated" data-animated="slideInLeft" href="/">
+                    <img src="/images/navbar-logo.png" alt="Tim Weisinger"/>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar2">
+                <ul class="navbar-right">
+                    {% if page.title == "home" %}
+                        <li><a id="cov" class="animated" data-animate="slideInRight" href="#cover">Home</a></li>
+                        <li><a id="por" class="animated" data-animate="slideInRight" href="#portfolio">Portfolio</a></li>
+                        <li><a id="too" class="animated" data-animate="slideInRight" href="#toolkit">Toolkit</a></li>
+                        <li><a id="con" class="animated" data-animate="slideInRight" href="#contact">Contact</a></li>
+                    {% else %}
+                        <li><a id="bac" class="animated" data-animate="slideInRight" href="/#portfolio">Back to Home</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--                  NAVBAR TWO END                   -->
+
