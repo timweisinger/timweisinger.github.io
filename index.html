@@ -2,10 +2,13 @@
 layout: default
 title: home
 projects:
-- digital
-- video
-- print
-- merch
+- {link: social-media-deltas, title: Social Media}
+- {link: video-ads-deltas, title: Video Ads}
+- {link: ooh-ads-deltas, title: OOH Ads}
+- {link: merchandise-deltas, title: Merchandise}
+- {link: branding-roots, title: Branding}
+- {link: ooh-ads-shell, title: OOH Ads}
+- {link: personal, title: Personal}
 tools:
 - photoshop
 - premiere
@@ -27,13 +30,13 @@ tools:
                     {% for project in page.projects %}
                     <div class="col-lg-3 col-sm-6 grid">
                         <figure class="effect-sarah animated" data-animate="zoomIn">
-                            <img src="/images/home/overlay-{{ project }}.jpg" alt="{{ project }}" />
+                            <img src="/images/home/overlay-{{ project.link }}.jpg" alt="{{ project.link }}" />
                             <figcaption>
                                 <div>
-                                    <h2>{{ project }}</h2>
+                                    <h2>{{ project.title }}</h2>
                                     <p>Take a look.</p>
                                 </div>
-                                <a href="/portfolio/{{ project }}.html"></a>
+                                <a href="/portfolio/{{ project.link }}.html"></a>
                             </figcaption>
                         </figure>
                     </div>

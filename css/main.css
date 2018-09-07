@@ -156,6 +156,17 @@ li a {
     padding-top: 40px;
 }
 
+#portfolio figcaption {
+    padding: 1em;
+}
+
+#portfolio figcaption h2 {
+    background-color: #222222;
+    font-size: 26px;
+    padding: 0 .5em;
+    word-spacing: 0;
+}
+
 /*      PORTFOLIO SECTION ENDS     */
 
 
