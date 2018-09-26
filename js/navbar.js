@@ -63,20 +63,6 @@ $(document).ready(function () {
 });
 
 
-//All page animations using Waypoints.js
-
-var animated = $('.animated');
-
-animated.waypoint(function(){
- $(this.element).addClass($(this.element).data("animate")).css('opacity', '1');
-},
-{ offset: '95%' });
-
-//Page animations end
-
-
-
-
 //Navbar scrollspy using Waypoints.js.
 
 var section = $('section');

@@ -21,16 +21,16 @@ tools:
         <!--                   Portfolio start                    -->
         <section id="portfolio">
             <div class="container">
-                <h2 class="animated" data-animate="slideInUp">PORTFOLIO</h2>
+                <h2>PORTFOLIO</h2>
 
-                <hr class="animated" data-animate="rubberBand">
+                <hr>
 
-                <h3 class="animated" data-animate="slideInUp">I work with digital, video, and print.</h3>
+                <h3>I work with digital, video, and print.</h3>
 
                 <div class="row hover-effect">
                     {% for project in page.projects %}
                     <div class="col-lg-3 col-sm-6 grid">
-                        <figure class="effect-sarah animated" data-animate="zoomIn">
+                        <figure class="effect-sarah">
                             <img src="/images/home/overlay-{{ project.link }}.jpg" alt="{{ project.link }}" />
                             <figcaption>
                                 <div>
@@ -51,15 +51,15 @@ tools:
         <!--                   Toolkit start                   -->
         <section id="toolkit">
             <div class="container">
-                <h2 class="animated" data-animate="slideInUp">TOOLKIT</h2>
+                <h2>TOOLKIT</h2>
 
-                <hr class="animated" data-animate="rubberBand">
+                <hr>
 
-                <h3 class="animated" data-animate="slideInUp">I'm proficient with Adobe's suite of tools.</h3>
+                <h3>I'm proficient with Adobe's suite of tools.</h3>
 
                 <div class="row">
                     {% for tool in page.tools %}
-                    <div class="col-md-3 col-sm-6 animated" data-animate="zoomIn">
+                    <div class="col-md-3 col-sm-6">
                         <img src="/images/home/{{ tool }}.png" alt="{{ tool }}">
                     </div>
                     {% endfor %}

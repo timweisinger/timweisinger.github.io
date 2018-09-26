@@ -1,12 +1,12 @@
     <!--                 NAVBAR ONE START                  -->
-    <nav class="nav navbar navbar-default navbar-one navbar-one-js animated" data-animate="fadeInDown">
+    <nav class="nav navbar navbar-default navbar-one navbar-one-js">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle animated" data-animate="slideInRight" data-toggle="collapse" data-target="#myNavbar1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
                     <i class="fa fa-bars fa-2x"></i>
                 </button>
                 {% if page.title != "home" %}
-                <a class="navbar-brand animated" data-animate="slideInLeft" href="/">
+                <a class="navbar-brand" href="/">
                     <img src="/images/navbar-logo.png" alt="Tim Weisinger"/>
                 </a>
                 {% endif %}
@@ -14,12 +14,12 @@
             <div class="collapse navbar-collapse" id="myNavbar1">
                 <ul class="navbar-right">
                     {% if page.title == "home" %}
-                        <li><a class="animated" data-animate="slideInRight" href="#cover">Home</a></li>
-                        <li><a class="animated" data-animate="slideInRight" href="#portfolio">Portfolio</a></li>
-                        <li><a class="animated" data-animate="slideInRight" href="#toolkit">Toolkit</a></li>
-                        <li><a class="animated" data-animate="slideInRight" href="#contact">Contact</a></li>
+                        <li><a href="#cover">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#toolkit">Toolkit</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     {% else %}
-                        <li><a class="animated" data-animate="slideInRight" href="/#portfolio">Back to Home</a></li>
+                        <li><a href="/#portfolio">Back to Home</a></li>
                     {% endif %}
                 </ul>
             </div>
@@ -30,7 +30,7 @@
 
     <!--                   COVER START                     -->
     <section id="cover" data-parallax="scroll" data-speed="0.5" data-image-src="/images/{{ page.title }}/{{ page.title }}-cover.jpg">
-        <div class="animated" data-animate="zoomIn">
+        <div>
             {% if page.title == "home" %}
             <img src="/images/home/home-cover-logo.png" alt="Tim Weisinger"/>
             <p>A CREATIVE CAT</p>
@@ -53,31 +53,31 @@
                 <p>Personal side projects</p>
             {% endif %}
         </div>
-        <a href="#portfolio" id="down-arrow"><i class="fa fa-angle-down animated" data-animate="flash infinite"></i></a>
+        <a href="#portfolio" id="down-arrow"><i class="fa fa-angle-down"></i></a>
     </section>
     <!--                    COVER END                      -->
 
 
     <!--                 NAVBAR TWO START                  -->
-    <nav class="nav navbar navbar-default navbar-two navbar-two-js animated" data-animated="fadeInDown">
+    <nav class="nav navbar navbar-default navbar-two navbar-two-js">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle animated" data-animated="slideInRight" data-toggle="collapse" data-target="#myNavbar2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
                     <i class="fa fa-bars fa-2x"></i>
                 </button>
-                <a class="navbar-brand animated" data-animated="slideInLeft" href="/">
+                <a class="navbar-brand" href="/">
                     <img src="/images/navbar-logo.png" alt="Tim Weisinger"/>
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar2">
                 <ul class="navbar-right">
                     {% if page.title == "home" %}
-                        <li><a id="cov" class="animated" data-animate="slideInRight" href="#cover">Home</a></li>
-                        <li><a id="por" class="animated" data-animate="slideInRight" href="#portfolio">Portfolio</a></li>
-                        <li><a id="too" class="animated" data-animate="slideInRight" href="#toolkit">Toolkit</a></li>
-                        <li><a id="con" class="animated" data-animate="slideInRight" href="#contact">Contact</a></li>
+                        <li><a id="cov" href="#cover">Home</a></li>
+                        <li><a id="por" href="#portfolio">Portfolio</a></li>
+                        <li><a id="too" href="#toolkit">Toolkit</a></li>
+                        <li><a id="con" href="#contact">Contact</a></li>
                     {% else %}
-                        <li><a id="bac" class="animated" data-animate="slideInRight" href="/#portfolio">Back to Home</a></li>
+                        <li><a id="bac" href="/#portfolio">Back to Home</a></li>
                     {% endif %}
                 </ul>
             </div>
