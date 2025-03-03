@@ -39,7 +39,7 @@ h2 {
 h3 {
     font-size: 25px;
     line-height: 40px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     font-weight: 400;
 }
@@ -208,21 +208,21 @@ li a {
 
 
 
-/*      TOOLKIT SECTION STARTS     */
+/*      ABOUT SECTION STARTS     */
 
-#toolkit {
+#about {
     color: #FFFFFF;
-    background-image: url("/images/home/toolkit-bg.jpg");
+    background-image: url("/images/home/about-bg.jpg");
     background-size: cover;
 }
 
-#toolkit img {
+#about img {
     margin-top: 70px;
     border-radius: 5px;
     width: 100px;
 }
 
-/*      TOOLKIT SECTION ENDS       */
+/*      ABOUT SECTION ENDS       */
 
 
 

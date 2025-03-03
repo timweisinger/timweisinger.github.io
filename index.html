@@ -2,14 +2,14 @@
 layout: default
 title: home
 projects:
-- {link: social-media-deltas, title: Social Media}
-- {link: video-ads-deltas, title: Video Ads}
-- {link: ooh-ads-deltas, title: OOH Ads}
-- {link: ooh-ads-shell, title: OOH Ads}
-- {link: package-design-post, title: Package Design}
-- {link: merchandise-deltas, title: Merchandise}
-- {link: branding-roots, title: Branding}
-- {link: personal, title: Personal}
+- {link: sams-club-digital, title: Sam's Club Digital}
+- {link: sams-club-print, title: Sam's Club Print}
+- {link: sams-club-style-guide, title: Sam's Club Style Guides}
+- {link: the-town-fc, title: The Town FC}
+- {link: sports-social-media-ads, title: Sports Social Media Ads}
+- {link: pivot-agency, title: PIVOT Agency}
+- {link: sf-deltas, title: San Francisco Deltas}
+- {link: house-of-warship, title: House of Warship}
 tools:
 - photoshop
 - premiere
@@ -29,7 +29,7 @@ tools:
 
                 <div class="row hover-effect">
                     {% for project in page.projects %}
-                    <div class="col-lg-3 col-sm-6 grid">
+                    <div class="col-md-6 col-xs-12 grid">
                         <figure class="effect-sarah">
                             <img src="/images/home/overlay-{{ project.link }}.jpg" alt="{{ project.link }}" />
                             <figcaption>
@@ -48,23 +48,29 @@ tools:
         <!--                   Portfolio end                  -->
 
 
-        <!--                   Toolkit start                   -->
-        <section id="toolkit">
+        <!--                   About start                   -->
+        <section id="about">
             <div class="container">
-                <h2>TOOLKIT</h2>
+                <h2>ABOUT</h2>
 
                 <hr>
 
-                <h3>I'm proficient with Adobe's suite of tools.</h3>
+                <h3>
+                    Hi, I'm Tim.
+                    <br><br>
+                    I'm a California-born, cat-loving, designer with 8+ years of experience.
+                    <br><br>
+                    I'm proficient with Adobe's suite of tools.
+                </h3>
 
                 <div class="row">
                     {% for tool in page.tools %}
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-xs-6">
                         <img src="/images/home/{{ tool }}.png" alt="{{ tool }}">
                     </div>
                     {% endfor %}
                 </div>
             </div>
         </section>
-        <!--                   Toolkit end                 -->
+        <!--                   About end                 -->
     </div>

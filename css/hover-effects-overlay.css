@@ -28,9 +28,8 @@
     float: none;
     overflow: hidden;
     margin: 10px auto;
-    min-width: 240px;
-    max-width: 420px;
-    max-height: 280px;
+    max-width: 600px;
+    max-height: 340px;
     width: 100%;
     background: #3085a3;
     border-radius: 5px;
