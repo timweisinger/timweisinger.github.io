@@ -47,6 +47,6 @@
 .grid img { 
     padding: 0;
     width: auto !important;
-    height: auto;
+    height: 340px;
     border-radius: 5px; 
 }
